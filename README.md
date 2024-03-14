@@ -3,15 +3,15 @@
 [![Scrapy](https://img.shields.io/badge/-Scrapy-464646?style=flat&logo=Scrapy&logoColor=ffffff&color=013220)](https://scrapy.org/)
 
 Парсер, собирающий информацию с сайта [https://peps.python.org/](https://peps.python.org/)<br/>
-Вся собранная информация сохраняется в файлы с расширением **.csv** в директории **results**:
+Вся собранная информация сохраняется в файлы 💾 с расширением **.csv** в директории **results**:
 - pep_<date.time>.csv - список всех PEP: номер, название, статус;
 - status_summary_<date.time>.csv - сводка по статусам PEP: количество документов в каждом статусе на сайте, а также общее количество всех документов.
 
 ## Автор проекта:
-Валерий Шанкоренко<br/>
+Валерий Шанкоренко👇<br/>
 Github: [Valera Shankorenko](https://github.com/valerashankorenko)<br/>
-Telegram: [@valeron007](https://t.me/valeron007)<br/>
-E-mail: valerashankorenko@yandex.by<br/>
+Telegram: 📱 [@valeron007](https://t.me/valeron007)<br/>
+E-mail: 📧 valerashankorenko@yandex.by<br/>
 
 ## Стек технологий
 - [Python](https://www.python.org/)
