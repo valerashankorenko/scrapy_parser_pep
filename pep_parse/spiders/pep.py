@@ -16,16 +16,18 @@ class PepSpider(scrapy.Spider):
         for link in pep:
             href = link.css('a::attr(href)').get()
             if href is not None:
+                if not href.endswith('/'):
+                    href += '/'
                 yield response.follow(href, callback=self.parse_pep)
 
     def parse_pep(self, response):
         """Метод для парсинга страницы документа PEP."""
         name = response.css('h1.page-title::text').get()
-        number = re.search(r'\d+', name)
+        number = name.split()[1]
         status = response.css('abbr::text').get()
         if status is not None:
             data = {
-                'number': number[0],
+                'number': number,
                 'name': name,
                 'status': status,
             }
